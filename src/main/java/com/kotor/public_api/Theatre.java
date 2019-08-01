@@ -1,14 +1,15 @@
 package com.kotor.public_api;
 
 import com.google.gson.Gson;
+import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 
+@Component
 public class Theatre {
     private final String API_KEY = "82cce8774e1d740003853ca2cee3b0f5";
     private final String BASE = "https://apidata.mos.ru/v1/datasets/";
