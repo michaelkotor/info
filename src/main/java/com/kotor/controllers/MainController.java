@@ -9,12 +9,16 @@ import java.io.IOException;
 
 @RestController
 public class MainController {
+    private final Theatre theatre;
+
     @Autowired
-    private Theatre theatre;
+    public MainController(Theatre theatre) {
+        this.theatre = theatre;
+    }
 
     @GetMapping("/greeting")
     public String greeting() throws IOException {
-        theatre.parse();
-        return "greeting";
+
+        return theatre.parse();
     }
 }
