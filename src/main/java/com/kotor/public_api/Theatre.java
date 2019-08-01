@@ -25,7 +25,7 @@ public class Theatre {
 
         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 
-        /*
+
         String inputLine;
 
         StringBuffer response = new StringBuffer();
@@ -37,10 +37,10 @@ public class Theatre {
 
         System.out.println(response.toString());
 
-         */
 
-        Gson gson = new Gson();
-        gson.toJson(connection.getInputStream());
+
+        //Gson gson = new Gson();
+        //gson.toJson(connection.getInputStream());
         return null;
     }
 }
