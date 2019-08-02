@@ -1,5 +1,4 @@
 <#import "parts/common.ftl" as common>
-<common.page>
+<@common.page/>
     <div>Hello, User!</div>
-
-</common.page>
+    <div>${data}</div>
