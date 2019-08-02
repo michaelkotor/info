@@ -6,6 +6,12 @@ import org.springframework.stereotype.Component;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Component
 public class Theatre {
@@ -13,9 +19,14 @@ public class Theatre {
     private final String BASE = "https://apidata.mos.ru/v1/datasets/";
     private final String ID = "498";
 
-    public String parse() throws IOException {
-        String url = BASE + ID + API_KEY;
+    private ArrayList<String> arrayList = new ArrayList<String>(Arrays.asList("a1", "a2", "a3", "a3", "a4", "a4", "a6",
+            "a675",
+            "765",
+            "Michael"));
 
+    public Object parse() {
+        String url = BASE + ID + API_KEY;
+        /*
         URL obj = new URL(url);
         HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
 
@@ -30,7 +41,89 @@ public class Theatre {
                 stringBuilder.append(line);
             }
         }
+         */
 
-        return stringBuilder.toString();
+
+
+
+
+
+        return null;
+    }
+
+    public Object start() {
+        return arrayList;
+    }
+
+    public Object distinct() {
+        ArrayList<String> collection1 = (ArrayList<String>) arrayList.clone();
+        Stream<String> streamFromCollection = collection1.stream();
+
+        Collection<String> stringCollection = streamFromCollection.distinct()
+                .collect(Collectors.toList());
+        return stringCollection;
+    }
+
+    public Object skip() {
+        ArrayList<String> collection1 = (ArrayList<String>) arrayList.clone();
+        Stream<String> streamFromCollection = collection1.stream();
+
+        Collection<String> stringCollection = streamFromCollection.skip(4)
+                .collect(Collectors.toList());
+        return stringCollection;
+    }
+
+    public Object filter() {
+        ArrayList<String> collection1 = (ArrayList<String>) arrayList.clone();
+        Stream<String> streamFromCollection = collection1.stream();
+
+        long stringCollection = streamFromCollection.filter("Michael"::equals).count();
+        return stringCollection;
+    }
+
+    public Object map() {
+        ArrayList<String> collection1 = (ArrayList<String>) arrayList.clone();
+        Stream<String> streamFromCollection = collection1.stream();
+
+        Collection<String> stringCollection = streamFromCollection.map((s) -> s + "_1")
+                .collect(Collectors.toList());
+        return stringCollection;
+    }
+
+    public Object peek() {
+        ArrayList<String> collection1 = (ArrayList<String>) arrayList.clone();
+        Stream<String> streamFromCollection = collection1.stream();
+
+        Collection<String> stringCollection = streamFromCollection.peek(String::toUpperCase)
+                .collect(Collectors.toList());
+        return stringCollection;
+    }
+
+    public Object limit() {
+        ArrayList<String> collection1 = (ArrayList<String>) arrayList.clone();
+        Stream<String> streamFromCollection = collection1.stream();
+
+        Collection<String> stringCollection = streamFromCollection.limit(5)
+                .collect(Collectors.toList());
+        return stringCollection;
+    }
+
+    public Object sorted() {
+        ArrayList<String> collection1 = (ArrayList<String>) arrayList.clone();
+        Stream<String> streamFromCollection = collection1.stream();
+
+        Collection<String> stringCollection = streamFromCollection.sorted()
+                .collect(Collectors.toList());
+        return stringCollection;
+    }
+
+    public Object flatMap() {
+        ArrayList<String> collection1 = (ArrayList<String>) arrayList.clone();
+        Stream<String> streamFromCollection = collection1.stream();
+
+        Collection<String> stringCollection = Arrays.asList(streamFromCollection.flatMap(
+                (p) -> Arrays.asList(p.split(",")).stream()).toArray(String[]::new));
+
+        return stringCollection;
     }
 }

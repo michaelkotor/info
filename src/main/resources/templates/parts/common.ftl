@@ -2,7 +2,7 @@
     <!DOCTYPE HTML>
     <html>
     <head>
-        <title>Info</title>
+        <title>Stream API</title>
     </head>
     <body>
     <#nested>

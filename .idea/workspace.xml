@@ -4,10 +4,10 @@
     <list default="true" id="37a769c6-f491-45f3-9f20-b95a308c7001" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kotor/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kotor/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resourses/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resourses/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resourses/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kotor/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kotor/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kotor/public_api/Theatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kotor/public_api/Theatre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kotor/public_api/Theatre.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kotor/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="255">
+              <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#424#425#0" expanded="true" />
@@ -62,21 +62,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kotor/public_api/Theatre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            <state relative-caret-position="-208">
+              <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#636#644#0" expanded="true" />
+                <element signature="method#parse#0;class#Theatre#0" />
               </folding>
             </state>
           </provider>
@@ -85,26 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="282">
+              <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -131,10 +106,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kotor/database/Init.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kotor/public_api/Theathe.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kotor/public_api/Theatre.java" />
         <option value="$PROJECT_DIR$/src/main/resourses/templates/greeting.html" />
         <option value="$PROJECT_DIR$/src/main/resourses/templates/parts/common.ftl" />
         <option value="$PROJECT_DIR$/src/main/resourses/templates/greeting.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kotor/public_api/Theatre.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kotor/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" />
       </list>
@@ -226,6 +202,15 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="info" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="parts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -298,7 +283,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564653590985</updated>
-      <workItem from="1564653593613" duration="10974000" />
+      <workItem from="1564653593613" duration="18071000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1564660095352</created>
@@ -335,11 +320,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564663339798</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="@RestController -&gt; @Controller">
+      <created>1564731831744</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1564731831744</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10974000" />
+    <option name="totallyTimeSpent" value="18071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -363,7 +355,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3045326" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34135976" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -438,24 +430,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kotor/public_api/Theatre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kotor/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="255">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#424#425#0" expanded="true" />
@@ -464,10 +446,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kotor/public_api/Theatre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-208">
+          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#636#644#0" expanded="true" />
+            <element signature="method#parse#0;class#Theatre#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="282">
+          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
         </state>
       </provider>
     </entry>
