@@ -1,15 +1,17 @@
 package com.kotor.public_api;
 
-import com.google.gson.Gson;
 import org.springframework.stereotype.Component;
 
-import java.io.*;
+import javax.validation.constraints.NotNull;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -42,10 +44,6 @@ public class Theatre {
             }
         }
          */
-
-
-
-
 
 
         return null;
@@ -125,5 +123,38 @@ public class Theatre {
                 (p) -> Arrays.asList(p.split(",")).stream()).toArray(String[]::new));
 
         return stringCollection;
+    }
+
+    public String sendRequest() throws IOException {
+        String url = BASE + ID + API_KEY;
+
+        URL obj = new URL(url);
+        HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
+
+        connection.setRequestMethod("GET");
+
+        return convertStreamToString(connection.getInputStream());
+    }
+
+    private static String convertStreamToString(@NotNull InputStream is) {
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+        StringBuilder sb = new StringBuilder();
+
+        String line = null;
+        try {
+            while ((line = reader.readLine()) != null) {
+                sb.append(line + "\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return sb.toString();
     }
 }
