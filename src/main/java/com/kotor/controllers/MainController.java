@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import javax.xml.bind.util.JAXBSource;
 import java.io.IOException;
 
 
@@ -18,9 +19,9 @@ public class MainController {
         this.userService = userService;
     }
 
-    @GetMapping("/greeting")
+    @GetMapping(value = "/greeting")
     public String greeting(Model model) throws IOException {
-        model.addAttribute("data",userService._());
+        model.addAttribute("data",userService.all());
         return "greeting";
     }
 }

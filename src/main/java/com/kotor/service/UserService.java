@@ -18,8 +18,9 @@ public class UserService {
         this.customerRepository = customerRepository;
     }
 
-    public String _() throws IOException {
+    public String all() throws IOException {
         return theatre.sendRequest();
+        //return theatre.generateJSON();
     }
 
 
